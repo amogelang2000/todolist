@@ -18,8 +18,7 @@ beforeEach(() => {
 });
 
 /**
- * await to see if loading is removed from screen
- * then checks if "My Todo List" appears on screen
+ * await to see if loading is removed from screen and then checks if "My Todo List" appears on screen
  */
 test("renders app", async () => {
   render(<App />);
@@ -30,7 +29,7 @@ test("renders app", async () => {
 
 /**
  * mocks the fetch call to the API.
- * checks if the added todo item is appears on the list.
+ *to  check if the added todo item is appearing on the list.
  */
 test("should add a TODO item", async () => {
   fetchMock.once(
